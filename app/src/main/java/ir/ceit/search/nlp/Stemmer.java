@@ -157,7 +157,8 @@ public class Stemmer {
                     return thirdPart.substring(0, thirdPart.indexOf(getPronoun(thirdPart), 2));
                 else
                     return thirdPart;
-
+            default:
+                break;
         }
 
         return firstPart + " " + secondPart + " " + thirdPart;
